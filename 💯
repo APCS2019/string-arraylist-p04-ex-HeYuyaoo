@@ -1,0 +1,17 @@
+public class StringCoder{
+    private String masterString;
+    private StringPart findPart(String str){
+        int len=5;
+        Stringpart temp=Stringpart(0,1);
+        while(len>=1){
+            int a=masterString.indexOf(str);
+            if(masterString.subString(a,a+len).equals(str)){
+                temp=Stringpart(a,len);
+            }
+            else{
+                len--;
+            }
+        }
+        return temp;
+    }
+}
