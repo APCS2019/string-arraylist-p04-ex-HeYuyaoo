@@ -1,10 +1,14 @@
 public class StringCoder{
     private String masterString;
     private StringPart findPart(String str){
+        if(str.length()>5){
         int len=5;
+        }
+        else
+        int len=str.length();
         Stringpart temp=new Stringpart(0,1);
         while(len>=1){
-            int a=masterString.indexOf(str.subSring(0,len);
+            int a=masterString.indexOf(str.subSring(0,len));
             if(a!=-1){
                 return new Stringpart(a,len);
             }
