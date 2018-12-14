@@ -4,13 +4,12 @@ public class StringCoder{
         int len=5;
         Stringpart temp=Stringpart(0,1);
         while(len>=1){
-            int a=masterString.indexOf(str);
-            if(masterString.subString(a,a+len).equals(str)){
+            int a=masterString.indexOf(str.subSring(0,len);
+            if(a!=-1){
                 temp=Stringpart(a,len);
+                return temp;
             }
-            else{
                 len--;
-            }
         }
         return temp;
     }
